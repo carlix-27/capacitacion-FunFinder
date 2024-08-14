@@ -3,7 +3,7 @@
 import axios from 'axios';
 // Sirve para determinar que los response sigan una estructura especifica.
 
-const API_URL = 'http://localhost:3000/api/tasks';
+const API_URL = 'http://localhost:3030/api/tasks';
 
 export const getAllTasks = async () => {
     const response = await axios.get(`${API_URL}`);

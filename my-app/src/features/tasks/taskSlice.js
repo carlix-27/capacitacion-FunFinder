@@ -51,7 +51,7 @@ export const taskSlice = createSlice({
                 }
             })
             .addCase(removeTask.fulfilled, (state, action) =>{
-                state.tasks = state.tasks.filter(task => task.id !== action.payload); // TODO: ver como hacer los cambios en tiempo real. Para hacerlo en tiempo real, hay dos formas. O pasamos desde back la nueva lista de tasks con el elemento borrado. O borramos directamente desde front.
+                state.tasks = state.tasks.filter(task => task.id !== action.payload);
             })
             .addCase(fetchTasks.pending, (state) => {
                 state.status = 'loading';
